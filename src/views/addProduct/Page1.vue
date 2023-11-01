@@ -11,7 +11,7 @@ export default defineComponent({
         
     },
     computed: {
-        ...mapGetters([''])
+        
     },
     methods: {
         
@@ -20,5 +20,5 @@ export default defineComponent({
 </script>
 
 <template>
-
+<h1>test</h1>
 </template>
