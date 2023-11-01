@@ -6,11 +6,7 @@ export default defineComponent({
   name: 'AccountManage',
   data () {
     return {
-<<<<<<< HEAD
       productData: []
-=======
-      products: null
->>>>>>> 5406860f4e0ef11849a5cf9ecd5f68e3395330e7
     }
   },
   mounted () {
@@ -20,17 +16,10 @@ export default defineComponent({
     ...mapGetters(['getProductData'])
   },
   methods: {
-<<<<<<< HEAD
     ...mapActions(['postProductDataSel']),
     async fetchProductData () {
       await this.postProductDataSel()
       this.productData = this.getProductData
-=======
-    ...mapActions(['postProductSel']),
-    async fetchProductData () {
-      await this.postProductSel()
-      this.products = this.getProductData
->>>>>>> 5406860f4e0ef11849a5cf9ecd5f68e3395330e7
     }
   }
 })
@@ -56,11 +45,7 @@ export default defineComponent({
         </tr>
         </thead>
         <tbody>
-<<<<<<< HEAD
         <tr v-for="nl in productData" :key="nl.id">
-=======
-        <tr v-for="nl in products" :key="nl.id">
->>>>>>> 5406860f4e0ef11849a5cf9ecd5f68e3395330e7
           <td>{{ nl.id }}</td>
           <td>{{ nl.name }}</td>
           <td>
