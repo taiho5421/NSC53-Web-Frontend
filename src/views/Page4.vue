@@ -7,7 +7,6 @@ export default defineComponent({
 </script>
 
 <template>
-dgfdfg
 </template>
 
 <style scoped>
