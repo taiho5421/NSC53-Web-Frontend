@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
+  "name": "wbvw_nsrc_53t01",
+=======
   "name": "wbvm_nsrc_53t01",
+>>>>>>> 5406860f4e0ef11849a5cf9ecd5f68e3395330e7
   "version": "0.1.0",
   "private": true,
   "scripts": {

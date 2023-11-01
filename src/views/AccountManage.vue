@@ -6,20 +6,35 @@ export default defineComponent({
   name: 'AccountManage',
   data () {
     return {
+<<<<<<< HEAD
+      accountData: []
+    }
+  },
+  mounted () {
+    this.fetchAccountDataSel()
+=======
       accounts: []
     }
   },
   mounted () {
     this.fetchAccountData()
+>>>>>>> 5406860f4e0ef11849a5cf9ecd5f68e3395330e7
   },
   computed: {
     ...mapGetters(['getAccountData'])
   },
   methods: {
+<<<<<<< HEAD
+    ...mapActions(['postAccountDataSel']),
+    async fetchAccountDataSel () {
+      await this.postAccountDataSel()
+      this.accountData = this.getAccountData
+=======
     ...mapActions(['postAccountSel']),
     async fetchAccountData () {
       await this.postAccountSel()
       this.accounts = this.getAccountData
+>>>>>>> 5406860f4e0ef11849a5cf9ecd5f68e3395330e7
     }
   }
 })
@@ -49,7 +64,11 @@ export default defineComponent({
         </tr>
         </thead>
         <tbody>
+<<<<<<< HEAD
+        <tr v-for="nl in accountData" :key="nl.id">
+=======
         <tr v-for="nl in accounts" :key="nl.id">
+>>>>>>> 5406860f4e0ef11849a5cf9ecd5f68e3395330e7
           <td>{{ nl.id }}</td>
           <td>{{ nl.account }}</td>
           <td>{{ nl.password }}</td>

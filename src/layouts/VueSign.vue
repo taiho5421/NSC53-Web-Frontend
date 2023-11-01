@@ -2,9 +2,16 @@
 import { defineComponent } from 'vue'
 
 export default defineComponent({
+<<<<<<< HEAD
+  name: 'VueSign'
+})
+</script>
+
+=======
   name: "VueSign"
 })
 </script>
+>>>>>>> 5406860f4e0ef11849a5cf9ecd5f68e3395330e7
 <template>
   <nav class="navbar navbar-expand navbar-dark bg-dark">
     <router-link class="navbar-brand" to="/sign">會員登入系統</router-link>
