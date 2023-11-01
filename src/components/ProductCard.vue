@@ -31,6 +31,6 @@ export default defineComponent({
 </script>
 <template>
   <div class="d-flex flex-wrap justify-content-around text-center">
-    <div v-for="nl in modulesCard" v-html="parseText(nl.texts, nl)"></div>
+    <div v-for="nl in modulesCard" v-html="parseText(nl['texts'], nl)"></div>
   </div>
 </template>

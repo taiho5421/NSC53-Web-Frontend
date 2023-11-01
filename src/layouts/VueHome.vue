@@ -10,13 +10,13 @@ export default defineComponent({
     <router-link class="navbar-brand" to="/">帳號管理系統</router-link>
     <ul class="navbar-nav">
       <li class="nav-item">
-        <router-link class="nav-link" to="/product/insert">商品上架</router-link>
+        <router-link class="nav-link" to="/add-product">商品上架</router-link>
       </li>
       <li class="nav-item">
-        <router-link class="nav-link" to="/product/manage">商品管理</router-link>
+        <router-link class="nav-link" to="/manage-product">商品管理</router-link>
       </li>
       <li class="nav-item">
-        <router-link class="nav-link" to="/account/manage">帳號管理</router-link>
+        <router-link class="nav-link" to="/manage-account">帳號管理</router-link>
       </li>
     </ul>
     <router-link class="ml-auto btn btn-outline-success" to="/sign">登入</router-link>

@@ -1,57 +1,52 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
 import VueHome from '@/layouts/VueHome.vue'
 import VueSign from '@/layouts/VueSign.vue'
+import ProductSelect from '@/views/ProductSelect.vue'
+import AddProduct from '@/views/AddProdcut.vue'
+import Page1 from '@/views/addProduct/Page1.vue'
+
 
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
-    name: 'home',
-    component: () => import('@/views/ProductSelect.vue'),
+    components: ProductSelect,
     meta: { layout: VueHome }
   },
   {
-    path: '/product/insert',
-    name: 'productInsert',
-    component: () => import('@/views/ProductInsert.vue'),
+    path: '/add-product',
+    component: AddProduct,
     meta: { layout: VueHome },
     children: [
       {
         path: 'page1',
-        name: 'page1',
-        component: () => import('@/views/Page1.vue'),
+        component: Page1
       },
       {
         path: 'page2',
-        name: 'page2',
-        component: () => import('@/views/Page2.vue'),
+        component: () => import('@/views/addProduct/Page2.vue'),
       },
       {
         path: 'page3',
-        name: 'page3',
-        component: () => import('@/views/Page3.vue'),
+        component: () => import('@/views/addProduct/Page3.vue'),
       },
       {
         path: 'page4',
-        name: 'page4',
-        component: () => import('@/views/Page4.vue'),
+        component: () => import('@/views/addProduct/Page4.vue'),
       }
     ]
   },
   {
-    path: '/product/manage',
-    name: 'productManage',
+    path: '/manage-product',
     component: () => import('@/views/ProductManage.vue'),
     meta: { layout: VueHome }
   },
   {
-    path: '/account/manage',
-    name: 'accountManage',
+    path: '/manage-account',
     component: () => import('@/views/AccountManage.vue'),
     meta: { layout: VueHome }
   },
   {
     path: '/sign',
-    name: 'sign',
     component: () => import('@/layouts/VueSign.vue'),
     meta: { layout: VueSign }
   }
