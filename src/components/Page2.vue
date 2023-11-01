@@ -7,7 +7,8 @@ export default defineComponent({
 </script>
 
 <template>
-<h1>1241234</h1>
+<h1>1241sdfsdfggf</h1>
+<p>hello world</p>
 </template>
 
 <style scoped>
